@@ -3,6 +3,7 @@
 ## How to start?
 1) `docker compose up -d`
 2) in php container run below commands:
+* `composer install`
 * `composer dsu`
 * `php bin/console lexik:jwt:generate-keypair --overwrite`
 * `php bin/console app:user:create_first`
