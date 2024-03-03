@@ -1,0 +1,14 @@
+default:
+    suites:
+        default:
+            paths:    [ features ]
+            contexts:
+                - App\Tests\Common\Behat\CommonContext
+                - App\Tests\Announcement\Behat\AnnouncementContext
+                - App\Tests\User\Behat\LoggedUserContext
+
+    extensions:
+        FriendsOfBehat\SymfonyExtension:
+            kernel:
+                class: App\Kernel
+            bootstrap: 'tests/bootstrap.php'

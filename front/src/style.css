@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* html {
+    @apply font-inter;
+  } */
+
+  body {
+    @apply bg-slate-300;
+  }
+  
+  form {
+    @apply w-full p-3 bg-slate-50 rounded-md flex flex-col gap-3 h-fit;
+  }
+
+  form input[type="text"], 
+  form input[type="email"], 
+  form input[type="password"], 
+  form input[type="number"], 
+  form input[type="checkbox"], 
+  form select, 
+  form button[type="submit"],
+  form button[type="button"],
+  form textarea,
+  .category-list input {
+    @apply border border-purple-600 rounded-full py-1 px-4;
+    @apply transition-all duration-300;
+    @apply hover:border-purple-500;  
+    @apply focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-700;
+    @apply hover:shadow-md focus:shadow-md hover:shadow-purple-100 focus:shadow-purple-100;
+  }
+
+  form textarea {
+    @apply rounded px-2;
+  }
+
+  form input:disabled {
+    @apply hover:shadow-none focus:shadow-none;
+    @apply hover:border-purple-900;
+    @apply cursor-not-allowed;
+    @apply border-purple-900;
+  }
+
+  form button[type="submit"]:not(:disabled) {
+    @apply w-1/2 mx-auto;
+    @apply bg-purple-500 text-slate-100 font-medium;
+    @apply hover:text-slate-800 hover:bg-purple-200 hover:shadow-lg;
+    @apply focus:bg-purple-200 focus:shadow-lg;
+  }
+
+  form button[type="submit"]:disabled {
+    @apply w-1/2 mx-auto;
+    @apply bg-gray-400 text-slate-100 font-medium;
+    @apply border-transparent opacity-50 cursor-not-allowed;
+  }
+
+  form button[type="button"] {
+    @apply w-fit;
+    @apply bg-slate-600 text-slate-100 font-medium border-slate-600;
+    @apply hover:bg-slate-100 hover:text-slate-800 hover:border-slate-600;
+    @apply focus:bg-slate-100 focus:text-slate-800 focus:border-slate-600;
+  }
+
+  form .form-row, form .form-row-inline {
+    @apply flex flex-col gap-2;
+  }
+
+  form .form-row-inline {
+    @apply flex-row;
+  }
+
+  form .form-input-error {
+    @apply text-sm font-semibold text-red-700 ml-2;
+  }
+
+  nav hr {
+    @apply my-3 rounded;
+  }
+}

@@ -1,0 +1,42 @@
+# This file is the entry point to configure your own services.
+# Files in the packages/ subdirectory configure your dependencies.
+
+# Put parameters here that don't need to change on each machine where the app is deployed
+# https://symfony.com/doc/current/best_practices.html#use-parameters-for-application-configuration
+parameters:
+    project_dir: '%kernel.project_dir%'
+    upload.local.dir: '%env(LOCAL_UPLOAD_DIR)%'
+    server.website_url: '%env(SERVER_WEBSITE_URL)%'
+    pagination.default_page: '%env(PAGINATION_DEFAULT_PAGE)%'
+    pagination.default_limit: '%env(PAGINATION_DEFAULT_LIMIT)%'
+    user.default.email: '%env(USER_DEFAULT_EMAIL)%'
+    user.default.password: '%env(USER_DEFAULT_PASSWORD)%'
+
+services:
+    # default configuration for services in *this* file
+    _defaults:
+        autowire: true      # Automatically injects dependencies in your services.
+        autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+
+    # makes classes in src/ available to be used as services
+    # this creates a service per class whose id is the fully-qualified class name
+    App\:
+        resource: '../src/'
+        exclude:
+            - '../src/DependencyInjection/'
+            - '../src/Entity/'
+            - '../src/Kernel.php'
+
+    # add more service definitions when explicit configuration is needed
+    # please note that last definitions always *replace* previous ones
+
+    App\Announcement\Domain\AnnouncementRepositoryInterface: '@App\Announcement\Infrastructure\ORM\DoctrineAnnouncementRepository'
+
+    App\Common\Domain\File\FileUploaderInterface: '@App\Common\Infrastructure\File\LocalFileUploader'
+    App\Common\Domain\File\FileGetterInterface: '@App\Common\Infrastructure\File\LocalFileGetter'
+    App\Common\Domain\Route\RouteGeneratorInterface: '@App\Common\Infrastructure\Route\SymfonyRouteGenerator'
+    App\Common\Domain\Pagination\PaginationResponseCreatorInterface: '@App\Common\Infrastructure\Pagination\SymfonyPaginationResponseCreator'
+
+#    App\User\Domain\UserRepositoryInterface: '@App\User\Infrastructure\ORM\DoctrineUserRepository'
+#    App\User\Domain\UserPasswordHasherInterface: '@App\User\Infrastructure\SymfonyUserPasswordHasher'
+

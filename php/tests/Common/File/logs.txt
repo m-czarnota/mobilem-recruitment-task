@@ -1,0 +1,81 @@
+User UID:    1000
+User GID:    1000
+───────────────────────────────────────
+using keys found in /config/keys
+[custom-init] No custom files found, skipping...
+[ls.io-init] done.
+[migrations] started
+[migrations] 01-nginx-site-confs-default: skipped
+[migrations] 02-default-location: skipped
+[migrations] done
+usermod: no changes
+───────────────────────────────────────
+      ██╗     ███████╗██╗ ██████╗ 
+      ██║     ██╔════╝██║██╔═══██╗
+      ██║     ███████╗██║██║   ██║
+      ██║     ╚════██║██║██║   ██║
+      ███████╗███████║██║╚██████╔╝
+      ╚══════╝╚══════╝╚═╝ ╚═════╝ 
+   Brought to you by linuxserver.io
+───────────────────────────────────────
+To support LSIO projects visit:
+https://www.linuxserver.io/donate/
+───────────────────────────────────────
+GID/UID
+───────────────────────────────────────
+User UID:    1000
+User GID:    1000
+───────────────────────────────────────
+using keys found in /config/keys
+[custom-init] No custom files found, skipping...
+[ls.io-init] done.
+[migrations] started
+[migrations] 01-nginx-site-confs-default: skipped
+[migrations] 02-default-location: skipped
+[migrations] done
+usermod: no changes
+───────────────────────────────────────
+      ██╗     ███████╗██╗ ██████╗ 
+      ██║     ██╔════╝██║██╔═══██╗
+      ██║     ███████╗██║██║   ██║
+      ██║     ╚════██║██║██║   ██║
+      ███████╗███████║██║╚██████╔╝
+      ╚══════╝╚══════╝╚═╝ ╚═════╝ 
+   Brought to you by linuxserver.io
+───────────────────────────────────────
+To support LSIO projects visit:
+https://www.linuxserver.io/donate/
+───────────────────────────────────────
+GID/UID
+───────────────────────────────────────
+User UID:    1000
+User GID:    1000
+───────────────────────────────────────
+using keys found in /config/keys
+[custom-init] No custom files found, skipping...
+[ls.io-init] done.
+[migrations] started
+[migrations] 01-nginx-site-confs-default: skipped
+[migrations] 02-default-location: skipped
+[migrations] done
+usermod: no changes
+───────────────────────────────────────
+      ██╗     ███████╗██╗ ██████╗ 
+      ██║     ██╔════╝██║██╔═══██╗
+      ██║     ███████╗██║██║   ██║
+      ██║     ╚════██║██║██║   ██║
+      ███████╗███████║██║╚██████╔╝
+      ╚══════╝╚══════╝╚═╝ ╚═════╝ 
+   Brought to you by linuxserver.io
+───────────────────────────────────────
+To support LSIO projects visit:
+https://www.linuxserver.io/donate/
+───────────────────────────────────────
+GID/UID
+───────────────────────────────────────
+User UID:    1000
+User GID:    1000
+───────────────────────────────────────
+using keys found in /config/keys
+[custom-init] No custom files found, skipping...
+[ls.io-init] done.

@@ -1,0 +1,16 @@
+announcement_controllers:
+    resource:
+        path: ../src/Announcement/Application/
+        namespace: App\Announcement\Application
+    type: attribute
+    prefix: /api/v1
+    trailing_slash_on_root: false
+
+user_controllers:
+    resource:
+        path: ../src/User/Application/
+        namespace: App\User\Application
+    type: attribute
+    prefix: /api/v1
+    trailing_slash_on_root: false
+
